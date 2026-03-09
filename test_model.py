@@ -110,5 +110,5 @@ for i, feature in enumerate(feature_names):
     else:
         print(f"- {feature} decreased phishing score ({round(impact,4)})")
 
-# Visual Plot
-shap.summary_plot(shap_values, features) 
+# Visual Plot:
+shap.summary_plot(shap_values, features)
