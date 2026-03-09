@@ -104,7 +104,7 @@ plt.show()
 cv_scores = cross_val_score(best_model, X, y, cv=5)
 print("Cross Validation Accuracy:", cv_scores.mean())
 
-#======CHECK OVERFITTING======remove this mart
+#======CHECK OVERFITTING======
 train_pred = best_model.predict(X_train)
 
 train_accuracy = accuracy_score(y_train, train_pred)

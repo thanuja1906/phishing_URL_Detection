@@ -90,7 +90,6 @@ features = extract_features(url)
 
 prediction = model.predict(features)[0]
 probability = model.predict_proba(features)[0][1]
-
 if prediction == 1:
     print(f"\n⚠️ Phishing Website Detected")
 else:
@@ -112,4 +111,4 @@ for i, feature in enumerate(feature_names):
         print(f"- {feature} decreased phishing score ({round(impact,4)})")
 
 # Visual Plot
-shap.summary_plot(shap_values, features)
+shap.summary_plot(shap_values, features) 
